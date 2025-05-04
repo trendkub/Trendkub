@@ -297,7 +297,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 <ProjectComments projectId={projectData.id} />
               </div>
             ) : (
-              <div className="bg-background rounded-xl border p-6 text-center shadow-sm dark:border-zinc-800">
+              <div className="bg-background rounded-xl border p-6 text-center dark:border-zinc-800">
                 <h2 className="font-heading mb-2 text-xl font-bold" id="comments">
                   Comments
                 </h2>
