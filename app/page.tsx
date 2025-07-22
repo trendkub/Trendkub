@@ -6,7 +6,7 @@ import { auth } from "@/lib/auth"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { ProjectSection } from "@/components/home/project-section"
-import { SponsorCards } from "@/components/shared/sponsor-cards"
+// import { SponsorCards } from "@/components/shared/sponsor-cards"
 import { getMonthBestProjects, getTodayProjects, getYesterdayProjects } from "@/app/actions/home"
 import { getLast30DaysPageviews, getLast30DaysVisitors } from "@/app/actions/plausible"
 import { getTopCategories } from "@/app/actions/projects"
@@ -18,8 +18,10 @@ export default async function Home() {
   const monthProjects = await getMonthBestProjects()
   const topCategories = await getTopCategories(5)
 
-  const last30DaysVisitors = await getLast30DaysVisitors()
-  const last30DaysPageviews = await getLast30DaysPageviews()
+  // const last30DaysVisitors = await getLast30DaysVisitors()
+  // const last30DaysPageviews = await getLast30DaysPageviews()
+  const last30DaysVisitors = "1,234" // Mock data for demonstration
+  const last30DaysPageviews = "5,678" // Mock data for demonstration
 
   // // Get session
   const session = await auth.api.getSession({
@@ -173,7 +175,7 @@ export default async function Home() {
             {/* Sponsors */}
             <div className="space-y-3 py-4">
               <h3 className="flex items-center font-semibold">Sponsors</h3>
-              <SponsorCards />
+              {/* <SponsorCards /> */}
             </div>
 
             {/* Categories */}

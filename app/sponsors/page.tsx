@@ -10,7 +10,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
-import { getLast30DaysPageviews, getLast30DaysVisitors } from "@/app/actions/plausible"
+
+// import { getLast30DaysPageviews, getLast30DaysVisitors } from "@/app/actions/plausible"
 
 export const metadata = {
   title: "Sponsors - Open-Launch",
@@ -19,10 +20,12 @@ export const metadata = {
 
 export default async function SponsorsPage() {
   const remainingSlots = SPONSORSHIP_SLOTS.TOTAL - SPONSORSHIP_SLOTS.USED
-  const [visitors, pageviews] = await Promise.all([
-    getLast30DaysVisitors(),
-    getLast30DaysPageviews(),
-  ])
+  // const [visitors, pageviews] = await Promise.all([
+  //   getLast30DaysVisitors(),
+  //   getLast30DaysPageviews(),
+  // ])
+
+  const [visitors, pageviews] = ["1,234", "5,678"] // Mock data for demonstration
 
   const generalSponsorshipBenefits = [
     "Featured on our homepage sidebar.",

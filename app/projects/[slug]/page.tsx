@@ -23,7 +23,7 @@ import { ProjectComments } from "@/components/project/project-comments"
 import { ProjectImageWithLoader } from "@/components/project/project-image-with-loader"
 import { ShareButton } from "@/components/project/share-button"
 import { UpvoteButton } from "@/components/project/upvote-button"
-import { SponsorCards } from "@/components/shared/sponsor-cards"
+// import { SponsorCards } from "@/components/shared/sponsor-cards"
 import { getProjectBySlug, hasUserUpvoted } from "@/app/actions/project-details"
 
 // Types
@@ -491,7 +491,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 <h3 className="text-muted-foreground text-xs font-medium tracking-wider uppercase">
                   Sponsors
                 </h3>
-                <SponsorCards />
+                {/* <SponsorCards /> */}
               </div>
             </div>
           </div>
