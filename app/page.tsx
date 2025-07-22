@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { ProjectSection } from "@/components/home/project-section"
 // import { SponsorCards } from "@/components/shared/sponsor-cards"
 import { getMonthBestProjects, getTodayProjects, getYesterdayProjects } from "@/app/actions/home"
-import { getLast30DaysPageviews, getLast30DaysVisitors } from "@/app/actions/plausible"
+// import { getLast30DaysPageviews, getLast30DaysVisitors } from "@/app/actions/plausible"
 import { getTopCategories } from "@/app/actions/projects"
 
 export default async function Home() {
